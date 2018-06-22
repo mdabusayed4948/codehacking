@@ -1,5 +1,8 @@
 @extends('layouts.admin')
 
+@section('title','Admin Dashboard')
+
+
 @section('content')
     <div class="row">
         <div class="col-lg-12">
@@ -10,7 +13,7 @@
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
-           Admin
+           Admin Dashboard
         </div>
     </div>
 @endsection
