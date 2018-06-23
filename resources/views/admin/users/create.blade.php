@@ -46,9 +46,9 @@
             </div>
 
             <div class="form-group">
-                {!! Form::label('file', 'Upload Image', ['class' => 'col-md-2 control-label']) !!}
+                {!! Form::label('photo_id', 'Upload Image', ['class' => 'col-md-2 control-label']) !!}
               <div class="col-md-8">
-                {!! Form::file('file',null,['class' => 'form-control']) !!}
+                {!! Form::file('photo_id',null,['class' => 'form-control']) !!}
               </div>
             </div>
 
