@@ -13,7 +13,7 @@
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
-        @include('includes.form_error')
+        @include('includes.msg')
         </div>
 
         <div class="col-lg-3">
@@ -66,9 +66,21 @@
             </div>
 
             <div class="form-group">
-                <div class="col-md-8 col-md-offset-2">
-                    {!! Form::submit('Update User',['class' => 'fa fa-btn fa-sign-in btn btn-primary']) !!}
+                <div class=" col-md-offset-2">
+                    {!! Form::submit('Update User',['class' => 'fa fa-btn fa-sign-in btn btn-primary col-md-9']) !!}
                 </div>
+            </div>
+
+            {!! Form::close() !!}
+
+            {!! Form::open(['method' => 'DELETE','action' => ['AdminUsersController@destroy',$user->id],'class' => 'form-horizontal']) !!}
+            {{ csrf_field() }}
+
+
+            <div class="form-group">
+                 <div class="col-md-offset-2 ">
+                     {!! Form::submit('Delete User',['class' => 'fa fa-btn fa-sign-in btn btn-danger col-md-9']) !!}
+                  </div>
             </div>
 
             {!! Form::close() !!}

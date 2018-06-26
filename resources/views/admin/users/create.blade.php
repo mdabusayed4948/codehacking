@@ -13,7 +13,7 @@
     <!-- /.row -->
     <div class="row">
         <div class="col-lg-12">
-           @include('includes.form_error')
+           @include('includes.msg')
 
            {!! Form::open(['method' => 'POST','action' => 'AdminUsersController@store','class' => 'form-horizontal','files'=>true]) !!}
 
